@@ -19,10 +19,14 @@ public class Texts {
     private String photo;
     private int views;
 
+    public Texts() {
+    }
 
-
-
-
+    public Texts(String title, String text, String photo) {
+        this.title = title;
+        this.text = text;
+        this.photo = photo;
+    }
 
     public String getPhoto() {
         return photo;

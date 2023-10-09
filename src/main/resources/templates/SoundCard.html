@@ -12,7 +12,7 @@
 <div th:each="el : ${texts}" class="alert alert-info mt-2">
     <h3 th:text="${el.title}"></h3>
     <p th:text="${el.photo}"></p>
-    <a href="'/SoundCard/'+${el.id}">photo</a>
+    <a href="'/SoundCard/'+${el.title}">photo</a>
 
 </div>
 
