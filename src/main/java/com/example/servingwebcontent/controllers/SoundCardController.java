@@ -8,14 +8,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class BlogController {
+public class SoundCardController {
     @Autowired
     private TextRepository textRepository;
 
-    @GetMapping("/about")
+    @GetMapping("/SoundCard")
     public String blog (Model model){
         Iterable<Texts> texts = textRepository.findAll();
         model.addAttribute("texts",texts);
-        return "about";
+        return "SoundCard";
     }
 }

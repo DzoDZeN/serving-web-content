@@ -10,9 +10,27 @@ import jakarta.persistence.Id;
 public class Texts {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
+
     private Long id;
-    private String title, text;
+    private String title;
+    private  String text;
+
+    private String photo;
     private int views;
+
+
+
+
+
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
 
     public Long getId() {
         return id;
