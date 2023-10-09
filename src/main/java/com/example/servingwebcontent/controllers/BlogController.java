@@ -1,14 +1,21 @@
 package com.example.servingwebcontent.controllers;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
+import com.example.servingwebcontent.controllers.models.Texts;
+import com.example.servingwebcontent.repository.TextRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
 
 @Controller
 public class BlogController {
+    @Autowired
+    private TextRepository textRepository;
+
     @GetMapping("/about")
     public String blog (Model model){
+        Iterable<Texts> texts = textRepository.findAll();
+        model.addAttribute("texts",texts);
         return "about";
     }
 }
