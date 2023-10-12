@@ -1,9 +1,6 @@
 package com.example.servingwebcontent.controllers.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 
 @Entity
@@ -14,6 +11,7 @@ public class Texts {
 
     private Long id;
     private String title;
+    @Column(length = 65535, columnDefinition = "text")
     private  String text;
 
     private String photo;

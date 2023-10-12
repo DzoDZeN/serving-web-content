@@ -29,7 +29,7 @@ public class MainController {
         return "SoundCard-add";
     }
     @PostMapping("/SoundCard/2sgM1j4&JzqJrqMV7PPXBZs$0l/add")
-    public String SoundCardPostAdd(@RequestParam String title,@RequestParam String text,@RequestParam String photo, Model model){
+    public String SoundCardPostAdd(@RequestParam String title,@RequestParam String text, @RequestParam String photo, Model model){
         Texts texts = new Texts(title,text, photo);
         textRepository.save(texts);
         return "redirect:/";
