@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Controller
 public class ErrorsControllers {
-    @ExceptionHandler(org.springframework.web.servlet.NoHandlerFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
 
     public String handleNotFound(Exception e, Model model) {

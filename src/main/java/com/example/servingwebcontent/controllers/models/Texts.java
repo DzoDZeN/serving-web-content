@@ -1,8 +1,6 @@
 package com.example.servingwebcontent.controllers.models;
 
 import jakarta.persistence.*;
-
-
 @Entity
 public class Texts {
     @Id
