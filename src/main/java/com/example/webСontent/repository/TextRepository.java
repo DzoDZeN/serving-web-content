@@ -1,6 +1,5 @@
-package com.example.servingwebcontent.repository;
-
-import com.example.servingwebcontent.controllers.models.Texts;
+package com.example.webСontent.repository;
+import com.example.webСontent.models.Texts;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

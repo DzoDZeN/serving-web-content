@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.controllers.models;
+package com.example.webСontent.models;
 
 import jakarta.persistence.*;
 @Entity

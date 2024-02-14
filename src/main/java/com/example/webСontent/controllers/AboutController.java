@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.controllers;
+package com.example.webСontent.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
