@@ -1,8 +1,8 @@
-package com.example.servingwebcontent.controllers;
+package com.example.webСontent.controllers;
 
+import com.example.webСontent.models.Texts;
+import com.example.webСontent.repository.TextRepository;
 import org.springframework.ui.Model;
-import com.example.servingwebcontent.controllers.models.Texts;
-import com.example.servingwebcontent.repository.TextRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
